@@ -859,4 +859,6 @@ for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
 done
 echo "Done. Note that some of these changes require a logout/restart of your OS to take effect.  At a minimum, be sure to restart your Terminal."
 
-
+## Powerline fonts
+git clone https://github.com/powerline/fonts.git --depth=1 /tmp/fonts
+cd /tmp/fonts && ./install.sh && cd ~
