@@ -19,13 +19,16 @@ fi
 brew update
 
 brew install node
+sudo npm install -g n
+sudo n latest
+sudo npm install -g npm
 
 # Remove outdated versions from the cellar.
 brew cleanup
 
-npm install -g coffee-script
-npm install -g grunt-cli
-npm install -g jshint
-npm install -g less
-
-#gem install jekyll
+# Misc.
+sudo npm install -g coffee-script
+sudo npm install -g grunt-cli
+sudo npm install -g yarn
+sudo npm install -g jshint
+sudo npm install -g less

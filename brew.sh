@@ -55,6 +55,8 @@ brew install narwhal
 # Install Python
 brew install python
 brew install python3
+brew install pyenv
+brew install pyenv-virtualenv
 
 # Install ruby-build and rbenv
 brew install ruby-build
@@ -76,30 +78,30 @@ brew install sfnt2woff-zopfli
 brew install woff2
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
-brew install aircrack-ng
-brew install bfg
-brew install binutils
-brew install binwalk
-brew install cifer
-brew install dex2jar
-brew install dns2tcp
-brew install fcrackzip
-brew install foremost
-brew install hashpump
-brew install hydra
-brew install john
-brew install knock
-brew install netpbm
-brew install nmap
-brew install pngcheck
-brew install socat
-brew install sqlmap
-brew install tcpflow
-brew install tcpreplay
-brew install tcptrace
-brew install ucspi-tcp # `tcpserver` etc.
-brew install homebrew/x11/xpdf
-brew install xz
+## brew install aircrack-ng
+## brew install bfg
+## brew install binutils
+## brew install binwalk
+## brew install cifer
+## brew install dex2jar
+## brew install dns2tcp
+## brew install fcrackzip
+## brew install foremost
+## brew install hashpump
+## brew install hydra
+## brew install john
+## brew install knock
+## brew install netpbm
+## brew install nmap
+## brew install pngcheck
+## brew install socat
+## brew install sqlmap
+## brew install tcpflow
+## brew install tcpreplay
+## brew install tcptrace
+## brew install ucspi-tcp # `tcpserver` etc.
+## brew install homebrew/x11/xpdf
+br## ew install xz
 
 # Install other useful binaries.
 brew install ack
@@ -133,25 +135,24 @@ brew link libxml2 --force
 brew link libxslt --force
 
 # Install Heroku
-brew install heroku-toolbelt
-heroku update
+## brew install heroku-toolbelt
+## heroku update
 
 # Install Cask
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
 # Core casks
-brew cask install --appdir="/Applications" alfred
+brew cask install --appdir="/Applications" flared
 brew cask install --appdir="~/Applications" iterm2
 brew cask install --appdir="~/Applications" java
 brew cask install --appdir="~/Applications" xquartz
 
 # Development tool casks
 brew cask install --appdir="/Applications" sublime-text
-brew cask install --appdir="/Applications" atom
-brew cask install --appdir="/Applications" virtualbox
-brew cask install --appdir="/Applications" vagrant
-brew cask install --appdir="/Applications" macdown
+brew cask install --appdir="/Applications" visual-studio-code
+brew cask install --appdir="/Applications" postman
+brew cask install --appdir="/Applications" docker
 
 # Misc casks
 brew cask install --appdir="/Applications" google-chrome
@@ -159,20 +160,24 @@ brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" dropbox
-brew cask install --appdir="/Applications" evernote
-brew cask install --appdir="/Applications" 1password
-#brew cask install --appdir="/Applications" gimp
-#brew cask install --appdir="/Applications" inkscape
+brew cask install --appdir="/Applications" dashlane
+brew cask install --appdir="/Applications" authy-desktop
+brew cask install --appdir="/Applications" snagit
+brew cask install --appdir="/Applications" spotify
+brew cask install --appdir="/Applications" kindle
+brew cask install --appdir="/Applications" wunderlist
 
 #Remove comment to install LaTeX distribution MacTeX
-#brew cask install --appdir="/Applications" mactex
-
-# Install Docker, which requires virtualbox
-brew install docker
-brew install boot2docker
+##brew cask install --appdir="/Applications" mactex
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
 
+# Install ZSH, Oh-my-zsh and customize terminal
+brew install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+## curl -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.zsh | zsh
+
 # Remove outdated versions from the cellar.
 brew cleanup
+
