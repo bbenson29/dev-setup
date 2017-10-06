@@ -147,6 +147,7 @@ brew cask install --appdir="/Applications" flared
 brew cask install --appdir="~/Applications" iterm2
 brew cask install --appdir="~/Applications" java
 brew cask install --appdir="~/Applications" xquartz
+brew cask install --appdir="~/Applications" alfred
 
 # Development tool casks
 brew cask install --appdir="/Applications" sublime-text
