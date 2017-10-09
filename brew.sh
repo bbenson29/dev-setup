@@ -167,6 +167,7 @@ brew cask install --appdir="/Applications" snagit
 brew cask install --appdir="/Applications" spotify
 brew cask install --appdir="/Applications" kindle
 brew cask install --appdir="/Applications" wunderlist
+brew cask install --appdir="/Applications" xmind
 
 #Remove comment to install LaTeX distribution MacTeX
 ##brew cask install --appdir="/Applications" mactex
